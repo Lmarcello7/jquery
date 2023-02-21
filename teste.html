@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./scripts/jquery.js"></script>
+</head>
+<body>
+    <div class="container p-3">
+        <h1 class="text-center">Teste de Tabela</h1>
+        <hr>
+        <table class="table table-sm table-striped table-bordered" id="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="nTable">1</td>
+                    <td>VW</td>
+                    <td>Golf</td>
+                    <td>2002</td>
+                    <td><button type="button" class="btn btn-sm btn-warning" title="Apagar">Apagar</button></td>
+                </tr>
+                <tr>
+                    <td class="nTable">2</td>
+                    <td>VW</td>
+                    <td>Gol Nova Geração</td>
+                    <td>2019</td>
+                    <td><button type="button" class="btn btn-sm btn-warning" title="Apagar">Apagar</button></td>
+                </tr>
+                <tr>
+                    <td class="nTable">3</td>
+                    <td>Mitsubshi</td>
+                    <td>Lancer</td>
+                    <td>2002</td>
+                    <td><button type="button" class="btn btn-sm btn-warning" title="Apagar">Apagar</button></td>
+                </tr>
+                <tr>
+                    <td class="nTable">4</td>
+                    <td>Mitsubshi</td>
+                    <td>Lancer</td>
+                    <td>2002</td>
+                    <td><button type="button" class="btn btn-sm btn-warning" title="Apagar">Apagar</button></td>
+                </tr>
+                <tr>
+                    <td class="nTable">5</td>
+                    <td>Mitsubshi</td>
+                    <td>Lancer</td>
+                    <td>2002</td>
+                    <td><button type="button" class="btn btn-sm btn-warning" title="Apagar">Apagar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('button').addClass('btnApagar');
+
+            $('.btnApagar').click(function(){
+                $('.nTable').each(function(index){
+                    console.log($('.nTable').text());
+                });
+            });
+        });
+    </script>
+</body>
+</html>
